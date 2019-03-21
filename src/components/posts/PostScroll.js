@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 import { BarLoader } from 'react-spinners';
 
-import tia from '../../../assets/tia.png';
+import tia from '../../assets/tia.png';
 import { fetchPosts, fetchNextPosts } from './post.action';
 import Post from './Post';
 
