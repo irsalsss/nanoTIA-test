@@ -8,10 +8,10 @@ export const fetchPosts = (endpoint) => async (dispatch, getState) => {
       endpoint,
       response
     }))
-    .catch(error => {
-      console.log(error)
-      throw error
-    })
+    .catch(error => dispatch({
+      type: 'POSTS_FAILURE',
+      errorMessage: error
+    }))
 }
 
 // Fetch Post API for React Infinite Scroll
@@ -22,8 +22,8 @@ export const fetchNextPosts = (page) => async (dispatch, getState) => {
       page: page + 1,
       response,
     }))
-    .catch(error => {
-      console.log(error)
-      throw error
-    })
+    .catch(error => dispatch({
+      type: 'NEXT_POSTS_FAILURE',
+      errorMessage: error
+    }))
 }
