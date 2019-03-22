@@ -2,6 +2,7 @@ const initialState = {
   isFetching: true,
   posts: [],
   page: 1,
+  errorMessage: ''
 };
 
 const posts = (state = initialState, action) => {
