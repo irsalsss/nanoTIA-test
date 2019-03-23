@@ -70,7 +70,7 @@ const mapStateToProps = state => {
   }
 };
 
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(
     {
       fetchPosts: fetchPosts,

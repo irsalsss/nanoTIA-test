@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Media from 'react-bootstrap/Media';
 import Image from 'react-bootstrap/Image';
 import Moment from 'react-moment';
@@ -8,7 +9,9 @@ const Post = ({ post }) => {
   return (
     <Media className="hoverable">
       <Media.Body>
-        <h5 className='post-list__title' dangerouslySetInnerHTML={{__html: post.title}}></h5>
+        <Link to={'/' + post.slug } >
+          <h5 className='post-list__title' dangerouslySetInnerHTML={{__html: post.title}}></h5>
+        </Link>
         <p>{post.seo.description}</p>
         <hr />
         <div className='post-list__author'>
