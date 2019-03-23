@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: black;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -58,4 +62,127 @@ code {
 
 .post-list__author_righ_grey {
   color: whitesmoke;
+}
+
+.post-list__title:hover  {
+  color: #E10000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.article-heading {
+  font-size: 52px;
+  font-family: Proxima;
+  font-weight: bolder;
+}
+
+/* Articles Style */
+.article-heading {
+  margin: 0;
+}
+
+.article__author {
+  float: left;
+}
+
+.article__author p {
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.article__author_right {
+  margin-left: 10px;
+  float: right;
+}
+
+.article__author_right_red {
+  color: #E10000;
+}
+
+.article__author_right_grey {
+  color: grey;
+}
+
+.detail-page {
+  
+}
+
+.article-container {
+  margin: 0px 140px;
+  box-shadow: 0 1px 10px 1px rgba(0,0,0,.16);
+}
+
+.article-header {
+  margin: 0px 80px;
+  padding-top: 40px;
+}
+
+.article__categories {
+  color: #E10000;
+  font-size: 20px;
+}
+
+.article__author {
+  margin-top: 20px;
+}
+
+.article-image {
+  margin-top: 20px;
+}
+
+.article-container img {
+  width: 100%;
+  height: auto;
+}
+
+.article-container .image-circle {
+  width: 40px;
+  height: 40px;
+}
+
+.article-content {
+  margin: 60px 160px;
+  padding-bottom: 100px;
+}
+
+.article-content h3 {
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 10px 0;
+}
+
+.article-content strong {
+  font-weight: bolder;
+}
+
+.article-content a {
+  color: #E10000;
+}
+
+.article-content p {
+  font-size: 20px;
+  line-height: 2.2rem;
+}
+
+.article-content blockquote p {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.article-content ul {
+  padding-bottom: 20px;
+}
+
+.article-content ul li {
+  list-style-type: disc;
+  margin: 10px 30px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.article-content p em {
+  font-size: 20px;
 }
