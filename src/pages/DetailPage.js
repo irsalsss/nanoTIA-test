@@ -17,10 +17,11 @@ class DetailPage extends Component {
   componentDidMount(){
     let slug = this.props.match.params.slug
     this.props.fetchArticles(slug)
+    window.scrollTo(0, 0)
   }
 
   render(){
-    console.log(this.props.articles)
+    // console.log(this.props.articles)
     const { loading, articles } = this.props.articles
     return(
       <div className="detail-page">
