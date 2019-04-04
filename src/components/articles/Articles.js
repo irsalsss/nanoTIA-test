@@ -1,10 +1,15 @@
 import React from 'react'
 import Image from 'react-bootstrap/Image';
 import Moment from 'react-moment';
+import { Helmet } from 'react-helmet';
 
 const Articles = ({ article }) => {
   return (
     <div className="article-container">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{article.title}</title>
+      </Helmet>
       <div className="article-header">
         <p className='article__categories'>{article.categories[0].parent}</p>
         <h1 dangerouslySetInnerHTML={{__html: article.title}} className="article-heading"></h1>
