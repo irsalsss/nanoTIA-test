@@ -21,8 +21,7 @@ class PostScroll extends Component {
    window.addEventListener('scroll', this.handleScroll);
   }
 
-  componentWillMount(){
-    this.props.fetchPosts();
+  componentWillUnmount(){
     window.removeEventListener('scroll', this.handleScroll);
   }
 
